@@ -4,6 +4,8 @@
 **Zajęcia nr / temat:** 1 — Sekwencje i sygnał mowy: od fali dźwiękowej do reprezentacji
 **Autor / grupa:** Jakub Powroźnik, Gr 03
 **Data:** 21.10.2026
+**link do repozytorium** https://github.com/poverowoznik/rozpoznawanie_mowy/tree/main/lab1
+
 
 ## 1. Cel ćwiczenia
 
