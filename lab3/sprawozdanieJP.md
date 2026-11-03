@@ -17,7 +17,7 @@ Celem ćwiczenia jest sprawdzenie, czy model GRU wnosi coś ponad proste reguły
 
 **Podział chronologiczny:** trening dni 0–699, walidacja 700–849, test 850–999. Dni nie są tasowane.
 
-**Standaryzacja:** średnia i odchylenie standardowe liczone wyłącznie z części treningowej (mu = [..], sd = [..]) i stosowane do całego szeregu, aby uniknąć przecieku danych. Wszystkie metryki liczone są w oryginalnej skali (`pred * sd + mu`).
+**Standaryzacja:** średnia i odchylenie standardowe liczone wyłącznie z części treningowej ((mu = 106,96, sd = 12,00)) i stosowane do całego szeregu, aby uniknąć przecieku danych. Wszystkie metryki liczone są w oryginalnej skali (`pred * sd + mu`).
 
 **Model:** `nn.GRU(1, 32)` + `nn.Linear(32, 1)` (stan ukryty po całym oknie → prognoza), 3393 parametrów. Uczenie: Adam (lr = 1e-2), funkcja straty MSE, batch 64, 40 epok, early stopping (po treningu przywracane są wagi z epoki o najniższej stracie walidacyjnej). Okno domyślne: 28 dni, ziarno 0.
 
