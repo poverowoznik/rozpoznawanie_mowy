@@ -45,15 +45,17 @@ Trzy tokenizery trenowane na całym korpusie (60 zdań), zmieniany tylko `vocab_
 
 Dwa warianty tego samego rozmiaru (36 zdań, 16 wystąpień „mysz” w każdym):
 
-- **wariant 1:** pula C + 12 zdań A + 4 zdania B,
-- **wariant 2:** pula C + 4 zdania A + 12 zdań B.
+**wariant 1:** pula C + 12 zdań A + 4 zdania B,
+
+**wariant 2:** pula C + 4 zdania A + 12 zdań B.
 
 Ustawienia obu modeli: `vector_size=50, window=3, min_count=2, sg=1 (Skip-gram), epochs=100, seed=0, workers=1`, własny `hashfxn` (crc32) dla powtarzalności wyników między uruchomieniami. Liczba epok 100 zamiast 200 z notatnika wzorcowego: przy 200 epokach na tak małym korpusie wszystkie cosinusy wychodziły ≈ 0,98 i ranking nie niósł informacji.
 
 ### 2.5 Grupy tematyczne (wybrane przed obejrzeniem wyników)
 
-- **zwierzę:** *kot, ser, nora, ogon, futro* — kot poluje na mysz, ser jest jej pokarmem, nora to jej dom, ogon i futro to cechy jej ciała.
-- **urządzenie:** *komputer, klawiatura, kursor, ekran, kabel* — elementy zestawu komputerowego, z którymi współpracuje mysz.
+**zwierzę:** *kot, ser, nora, ogon, futro* — kot poluje na mysz, ser jest jej pokarmem, nora to jej dom, ogon i futro to cechy jej ciała.
+
+**urządzenie:** *komputer, klawiatura, kursor, ekran, kabel* — elementy zestawu komputerowego, z którymi współpracuje mysz.
 
 W wariancie 1 każde z tych słów ma ≥ 3 wystąpienia (przy `min_count=2`): kot 5, ogon 4, pozostałe 3.
 
