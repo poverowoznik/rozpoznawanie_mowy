@@ -112,19 +112,19 @@ Dla każdej pary spełniony jest warunek `x[1:] == y[:-1]`, a oba okna są zgodn
 | 80 | 447 246 | 56 601 | 55 041 | 13 976 | 1 769 | 1 721 |
 | 160 | 447 166 | 56 521 | 54 961 | 13 973 | 1 767 | 1 718 |
 
-![Liczba par w zależności od SEKW](img/pary_sekw.png)
+![Liczba par w zależności od SEKW](pary_sekw.png)
 
-![Ilość danych wejściowych na epokę](img/znaki_na_epoke.png)
+![Ilość danych wejściowych na epokę](znaki_na_epoke.png)
 
 ### 3.4. Najczęstsze znaki w treningu
 
-![20 najczęstszych znaków](img/znaki_top20.png)
+![20 najczęstszych znaków](znaki_top20.png)
 
 ### 3.5. Słowa
 
 W treningu jest 63 979 słów, w tym 16 645 unikalnych. Najczęstsze: `się` (1903), `w` (1733), `nie` (1405), `i` (1258), `na` (1061), `z` (1025), `to` (778), `że` (770), `do` (733), `o` (527); z powieści `winston` (394). Średnia długość słowa: **5,73** znaku.
 
-![Najczęstsze słowa i rozkład długości słów](img/slowa.png)
+![Najczęstsze słowa i rozkład długości słów](slowa.png)
 
 ## 4. Analiza i interpretacja
 
